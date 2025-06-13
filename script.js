@@ -58,7 +58,53 @@ document.addEventListener('DOMContentLoaded', () => {
             const ipk = totalSKS > 0 ? (totalMutu / totalSKS).toFixed(2) : 0;
             
             const hasilIPKElement = document.getElementById('hasilIPK');
-            hasilIPKElement.textContent = `IPK Anda: ${ipk}`;
+            hasilIPKElement.textContent = IPK Anda: ${ipk};
         });
     }
+    // Letakkan kode ini di dalam: document.addEventListener('DOMContentLoaded', () => { ... });
+
+// --- Halaman KRS ---
+const tabelKRS = document.getElementById('tabelKRS');
+if (tabelKRS) {
+    const checkboxes = document.querySelectorAll('.mk-select');
+    const totalSKSElement = document.getElementById('totalSKS');
+    const btnSimpanKRS = document.getElementById('btnSimpanKRS');
+    const krsMessage = document.getElementById('krsMessage');
+    const maksSKS = 24;
+
+    function hitungTotalSKS() {
+        let total = 0;
+        checkboxes.forEach(cb => {
+            if (cb.checked) {
+                total += parseInt(cb.dataset.sks);
+            }
+        });
+
+        totalSKSElement.textContent = total;
+
+        if (total > maksSKS) {
+            totalSKSElement.style.color = 'var(--error-color)';
+            krsMessage.textContent = 'Total SKS melebihi batas maksimal!';
+            krsMessage.style.color = 'var(--error-color)';
+        } else {
+            totalSKSElement.style.color = 'var(--primary-color)';
+            krsMessage.textContent = '';
+        }
+    }
+
+    checkboxes.forEach(cb => {
+        cb.addEventListener('change', hitungTotalSKS);
+    });
+
+    btnSimpanKRS.addEventListener('click', () => {
+        const total = parseInt(totalSKSElement.textContent);
+        if (total === 0) {
+             alert('Anda belum memilih mata kuliah.');
+        } else if (total > maksSKS) {
+            alert('Tidak dapat menyimpan, Total SKS melebihi batas!');
+        } else {
+            alert(KRS berhasil disimpan dengan total ${total} SKS.);
+        }
+    });
+}
 });
