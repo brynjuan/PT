@@ -61,7 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
             hasilIPKElement.textContent = `IPK Anda: ${ipk}`;
         });
     }
-    // Letakkan kode ini di dalam: document.addEventListener('DOMContentLoaded', () => { ... });
 
 // --- Halaman KRS ---
 const tabelKRS = document.getElementById('tabelKRS');
