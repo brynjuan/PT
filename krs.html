@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -88,4 +89,96 @@
 
     <script src="script.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRS - SOYUZ-ACADEMY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>SOYUZ-ACADEMY</h1>
+    </header>
+    
+    <nav class="main-nav">
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="transkrip.html">Transkrip Nilai</a></li>
+            <li><a href="krs.html" class="active">KRS</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="card">
+            <h2>Kartu Rencana Studi (KRS) - Semester Ganjil 2025/2026</h2>
+            <p>Silakan pilih mata kuliah yang akan Anda ambil. Maksimal SKS: 24.</p>
+            
+            <div class="krs-container">
+                <div class="table-responsive">
+                    <table id="tabelKRS">
+                        <thead>
+                            <tr>
+                                <th>Pilih</th>
+                                <th>Kode MK</th>
+                                <th>Nama Mata Kuliah</th>
+                                <th>SKS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" class="mk-select" data-sks="3"></td>
+                                <td>MK101</td>
+                                <td>Struktur Data</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="mk-select" data-sks="3"></td>
+                                <td>MK102</td>
+                                <td>Jaringan Komputer</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="mk-select" data-sks="4"></td>
+                                <td>MK103</td>
+                                <td>Pemrograman Berorientasi Objek</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="mk-select" data-sks="2"></td>
+                                <td>MK104</td>
+                                <td>Kewirausahaan</td>
+                                <td>2</td>
+                            </tr>
+                             <tr>
+                                <td><input type="checkbox" class="mk-select" data-sks="3"></td>
+                                <td>MK105</td>
+                                <td>Sistem Operasi</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="krs-summary card">
+                    <h3>Ringkasan KRS</h3>
+                    <p>Total SKS Dipilih:</p>
+                    <h2 id="totalSKS">0</h2>
+                    <button id="btnSimpanKRS" class="btn">Simpan KRS</button>
+                    <p id="krsMessage" class="message"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 - Kelompok Soyuz. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+>>>>>>> 897a0518aa0ace3df4425b9a8295fd7306d01d0c
 </html>

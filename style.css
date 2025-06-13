@@ -201,7 +201,11 @@ thead {
         text-align: center;
     }
 
+<<<<<<< HEAD
     /* Styling for KRS Page */
+=======
+/* Styling for KRS Page */
+>>>>>>> 897a0518aa0ace3df4425b9a8295fd7306d01d0c
 .krs-container {
     display: flex;
     flex-wrap: wrap;
