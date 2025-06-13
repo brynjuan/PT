@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const ipk = totalSKS > 0 ? (totalMutu / totalSKS).toFixed(2) : 0;
             
             const hasilIPKElement = document.getElementById('hasilIPK');
-            hasilIPKElement.textContent = IPK Anda: ${ipk};
+            hasilIPKElement.textContent = `IPK Anda: ${ipk}`;
         });
     }
     // Letakkan kode ini di dalam: document.addEventListener('DOMContentLoaded', () => { ... });
@@ -103,11 +103,7 @@ if (tabelKRS) {
         } else if (total > maksSKS) {
             alert('Tidak dapat menyimpan, Total SKS melebihi batas!');
         } else {
-<<<<<<< HEAD
             alert(`KRS berhasil disimpan dengan total ${total} SKS.`);
-=======
-            alert(KRS berhasil disimpan dengan total ${total} SKS.);
->>>>>>> 897a0518aa0ace3df4425b9a8295fd7306d01d0c
         }
     });
 }
