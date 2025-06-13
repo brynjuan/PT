@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transkrip Nilai - SOYUZ-ACADEMY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>SOYUZ-ACADEMY</h1>
+    </header>
+    
+    <nav class="main-nav">
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="transkrip.html" class="active">Transkrip Nilai</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="card">
+            <h2>Transkrip Nilai Akademik</h2>
+            <div class="table-responsive">
+                <table id="tabelNilai">
+                    <thead>
+                        <tr>
+                            <th>Kode MK</th>
+                            <th>Nama Mata Kuliah</th>
+                            <th>SKS</th>
+                            <th>Nilai</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MK001</td>
+                            <td>Kalkulus I</td>
+                            <td class="sks">3</td>
+                            <td class="nilai">A</td>
+                        </tr>
+                        <tr>
+                            <td>MK002</td>
+                            <td>Fisika Dasar</td>
+                            <td class="sks">3</td>
+                            <td class="nilai">B</td>
+                        </tr>
+                        <tr>
+                            <td>MK003</td>
+                            <td>Algoritma & Pemrograman</td>
+                            <td class="sks">4</td>
+                            <td class="nilai">A</td>
+                        </tr>
+                        <tr>
+                            <td>MK004</td>
+                            <td>Bahasa Inggris</td>
+                            <td class="sks">2</td>
+                            <td class="nilai">C</td>
+                        </tr>
+                         <tr>
+                            <td>MK005</td>
+                            <td>Basis Data</td>
+                            <td class="sks">3</td>
+                            <td class="nilai">B</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="ipk-section">
+                <button id="btnHitungIPK" class="btn">Hitung IPK</button>
+                <h3 id="hasilIPK"></h3>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 - Kelompok Soyuz. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
