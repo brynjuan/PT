@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - SOYUZ-ACADEMY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>SOYUZ-ACADEMY</h1>
+    </header>
+    
+    <nav class="main-nav">
+        <ul>
+            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="transkrip.html">Transkrip Nilai</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="card">
+            <h2>Jadwal Kuliah Hari Ini</h2>
+            <article>
+                <p><strong>10:00 - 12:00:</strong> Pemrograman Web Dasar (Ruang 101)</p>
+                <p><strong>13:00 - 15:00:</strong> Basis Data (Ruang 203)</p>
+            </article>
+        </section>
+
+        <section id="pengumuman" class="card">
+            <h2>Pengumuman Akademik</h2>
+            <article>
+                <p>Batas akhir pembayaran UKT semester genap adalah tanggal 30 Juni 2025.</p>
+                <div id="detailPengumuman" class="details">
+                    <p>Harap segera melakukan pembayaran untuk menghindari sanksi administrasi. Pembayaran dapat dilakukan melalui teller bank atau mobile banking.</p>
+                </div>
+                <button id="btnDetail" class="btn-secondary">Lihat Detail</button>
+            </article>
+        </section>
+
+        <section class="card">
+            <h2>Informasi Mahasiswa</h2>
+            <p><strong>Nama:</strong> Budi Sanjaya</p>
+            <p><strong>NIM:</strong> 123456789</p>
+            <p><strong>Total SKS ditempuh:</strong> 98 SKS</p>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 - Kelompok Soyuz. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
