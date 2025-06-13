@@ -200,4 +200,39 @@ thead {
     .ipk-section {
         text-align: center;
     }
+
+/* Styling for KRS Page */
+.krs-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.krs-container .table-responsive {
+    flex: 3; /* Takes up 3/4 of the space */
+    min-width: 300px;
+}
+
+.krs-summary {
+    flex: 1; /* Takes up 1/4 of the space */
+    min-width: 200px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.krs-summary h2 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin: 0.5rem 0;
+}
+
+.krs-summary .btn {
+    margin-top: 1rem;
+}
+
+.message {
+    margin-top: 1rem;
+    color: var(--success-color);
+    font-weight: bold;
+}
 }
